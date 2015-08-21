@@ -1,0 +1,2641 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 22:41:32 -0300
+
+ActiveRecord::NoDatabaseError (FATAL:  role "ivanglish" does not exist
+):
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:665:in `rescue in connect'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4.rc1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4.rc1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (48.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 22:44:55 -0300
+
+RuntimeError (YAML syntax error occurred while parsing /home/ivanglish/RubymineProjects/IWEB/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): mapping values are not allowed in this context at line 27 column 13):
+  railties (4.2.4.rc1) lib/rails/application/configuration.rb:115:in `rescue in database_configuration'
+  railties (4.2.4.rc1) lib/rails/application/configuration.rb:98:in `database_configuration'
+  activerecord (4.2.4.rc1) lib/active_record/railtie.rb:117:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.4.rc1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.4.rc1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.4.rc1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.4.rc1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.4.rc1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.4.rc1) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.4.rc1) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.4.rc1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4.rc1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 22:47:26 -0300
+
+RuntimeError (YAML syntax error occurred while parsing /home/ivanglish/RubymineProjects/IWEB/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): did not find expected key while parsing a block mapping at line 11 column 3):
+  railties (4.2.4.rc1) lib/rails/application/configuration.rb:115:in `rescue in database_configuration'
+  railties (4.2.4.rc1) lib/rails/application/configuration.rb:98:in `database_configuration'
+  activerecord (4.2.4.rc1) lib/active_record/railtie.rb:117:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.4.rc1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.4.rc1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.4.rc1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.4.rc1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.4.rc1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.4.rc1) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.4.rc1) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.4.rc1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4.rc1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 22:48:17 -0300
+
+ActiveRecord::NoDatabaseError (FATAL:  database "IWeb_development" does not exist
+):
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:665:in `rescue in connect'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4.rc1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4.rc1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4.rc1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4.rc1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 22:49:23 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/railties-4.2.4.rc1/lib/rails/templates/rails/welcome/index.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 22:57:16 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 774ms (Views: 763.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e24b65c98dbf1e867e5ee86a248513beac696afc9d4ebd1efd46d7d76790251b.css?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/bootstrap.self-756458212dbba41cdfd4d923a19c6aecedfe8e4f849d3846fb477a2e283f7bda.css?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/font.self-5096bfb70b417fb9382f3d7ff2500e4dd34429d6825ecc88980c5cb11e79cf00.css?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/font-awesome.self-98bac7ae7156038a388bde1d20ef39b2bbd578e718ae5be82617095f1b5ff91d.css?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/base.self-7ee3f3699f074a95d06dc3ae9f20a902f123531a4bd34bc2ce8d402f8e0597c8.css?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/blue.self-c930490ee9b578643182b4f6caaf1e9821f4365f0b8a30bef89549570c7dde33.css?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/bootstrap-responsive.self-14916b12cd2e801029ba52ef2a416470518b0dfb7660a9f7bbb56277e19c18c4.css?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/bootstrap-responsive.min.self-2c9154a1ace9a0c8c6385582b8e16698daa619fd3951bdca09d2fa1663e998ec.css?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/bootstrap.min.self-a3e1e69d70c0166ed3d60969d597bb38f55d657d4baf14f9e8555a20e6624346.css?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/font-awesome-ie7.self-aa3b8425ab2bae1bf25963ddd466e863a9e9d7056f2b99b966cea4849211844e.css?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/bootstrap.self-547abc8e1702ed11928e3d70f509ef3c62ed1d9a12eda5e000771096cca57dc5.js?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/bootstrap.min.self-b3cb8fb4a398184b1dd250cfe178303f67fa82d01ff233d5cc2e06e7cb0dbcf1.js?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/jquery-1.8.2.min.self-0802d202f92fceea9a9620429185e607acb856bdba102c2a062b96f6d7432f4b.js?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/jquery.fitvids.self-4bd9a058d6abb8870e201bd7bd210c4a917d42320f6f2b04e5e09f0d5644d8e8.js?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/application.self-29c15a76104243fc4fab0b953f6571b7056bbebdb2b4019eaab82bf4f241caae.js?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-20 22:57:17 -0300
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/lato-bla.woff" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/lato-reg.woff" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/bg-landing.gif" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/lato-lig.woff" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/divider.png" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/lato-bol.woff" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/sep.png" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/projects-area.gif" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 22:57:18 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 94ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e24b65c98dbf1e867e5ee86a248513beac696afc9d4ebd1efd46d7d76790251b.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/bootstrap.self-756458212dbba41cdfd4d923a19c6aecedfe8e4f849d3846fb477a2e283f7bda.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/font-awesome.self-98bac7ae7156038a388bde1d20ef39b2bbd578e718ae5be82617095f1b5ff91d.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/base.self-7ee3f3699f074a95d06dc3ae9f20a902f123531a4bd34bc2ce8d402f8e0597c8.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/blue.self-c930490ee9b578643182b4f6caaf1e9821f4365f0b8a30bef89549570c7dde33.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/font.self-5096bfb70b417fb9382f3d7ff2500e4dd34429d6825ecc88980c5cb11e79cf00.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/bootstrap-responsive.self-14916b12cd2e801029ba52ef2a416470518b0dfb7660a9f7bbb56277e19c18c4.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/bootstrap-responsive.min.self-2c9154a1ace9a0c8c6385582b8e16698daa619fd3951bdca09d2fa1663e998ec.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/font-awesome-ie7.self-aa3b8425ab2bae1bf25963ddd466e863a9e9d7056f2b99b966cea4849211844e.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/bootstrap.min.self-a3e1e69d70c0166ed3d60969d597bb38f55d657d4baf14f9e8555a20e6624346.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:30 -0300
+
+
+Started GET "/assets/bootstrap.self-547abc8e1702ed11928e3d70f509ef3c62ed1d9a12eda5e000771096cca57dc5.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/bootstrap.min.self-b3cb8fb4a398184b1dd250cfe178303f67fa82d01ff233d5cc2e06e7cb0dbcf1.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/jquery-1.8.2.min.self-0802d202f92fceea9a9620429185e607acb856bdba102c2a062b96f6d7432f4b.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/jquery.fitvids.self-4bd9a058d6abb8870e201bd7bd210c4a917d42320f6f2b04e5e09f0d5644d8e8.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/application.self-29c15a76104243fc4fab0b953f6571b7056bbebdb2b4019eaab82bf4f241caae.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/divider.png" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/lato-reg.woff" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/lato-bla.woff" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/lato-lig.woff" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/bg-landing.gif" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/lato-bol.woff" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/sep.png" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/projects-area.gif" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:03:31 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 82ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e24b65c98dbf1e867e5ee86a248513beac696afc9d4ebd1efd46d7d76790251b.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/bootstrap.self-756458212dbba41cdfd4d923a19c6aecedfe8e4f849d3846fb477a2e283f7bda.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/base.self-7ee3f3699f074a95d06dc3ae9f20a902f123531a4bd34bc2ce8d402f8e0597c8.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/font-awesome.self-98bac7ae7156038a388bde1d20ef39b2bbd578e718ae5be82617095f1b5ff91d.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/font.self-5096bfb70b417fb9382f3d7ff2500e4dd34429d6825ecc88980c5cb11e79cf00.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/blue.self-c930490ee9b578643182b4f6caaf1e9821f4365f0b8a30bef89549570c7dde33.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/bootstrap-responsive.min.self-2c9154a1ace9a0c8c6385582b8e16698daa619fd3951bdca09d2fa1663e998ec.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/bootstrap-responsive.self-14916b12cd2e801029ba52ef2a416470518b0dfb7660a9f7bbb56277e19c18c4.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/bootstrap.min.self-a3e1e69d70c0166ed3d60969d597bb38f55d657d4baf14f9e8555a20e6624346.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/font-awesome-ie7.self-aa3b8425ab2bae1bf25963ddd466e863a9e9d7056f2b99b966cea4849211844e.css?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/bootstrap.self-547abc8e1702ed11928e3d70f509ef3c62ed1d9a12eda5e000771096cca57dc5.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/bootstrap.min.self-b3cb8fb4a398184b1dd250cfe178303f67fa82d01ff233d5cc2e06e7cb0dbcf1.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/jquery-1.8.2.min.self-0802d202f92fceea9a9620429185e607acb856bdba102c2a062b96f6d7432f4b.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/jquery.fitvids.self-4bd9a058d6abb8870e201bd7bd210c4a917d42320f6f2b04e5e09f0d5644d8e8.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/application.self-29c15a76104243fc4fab0b953f6571b7056bbebdb2b4019eaab82bf4f241caae.js?body=1" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/bg-landing.gif" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/divider.png" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/sep.png" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/assets/projects-area.gif" for 127.0.0.1 at 2015-08-20 23:03:34 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:04:10 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap.css )` to `config/initializers/assets.rb` and restart your server):
+     5:   <title><!-- Your App Title --></title>
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <meta name="description" content="">
+     8:   <%= stylesheet_link_tag  "application", "bootstrap", "bootstrap-responsive", "font", "font-awesome", "base.css", "blue.css"%>
+     9:   <%= javascript_include_tag "application" %>
+    10:   <%= csrf_meta_tags %>
+    11:   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__32819166_96833310'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:04:16 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap.css )` to `config/initializers/assets.rb` and restart your server):
+     5:   <title><!-- Your App Title --></title>
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <meta name="description" content="">
+     8:   <%= stylesheet_link_tag  "application", "bootstrap", "bootstrap-responsive", "font", "font-awesome", "base.css", "blue.css"%>
+     9:   <%= javascript_include_tag "application" %>
+    10:   <%= csrf_meta_tags %>
+    11:   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__32819166_96833310'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (22.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:05:15 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap.css )` to `config/initializers/assets.rb` and restart your server):
+     5:   <title><!-- Your App Title --></title>
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <meta name="description" content="">
+     8:   <%= stylesheet_link_tag  "application", "bootstrap", "bootstrap-responsive", "font", "font-awesome", "base.css", "blue.css"%>
+     9:   <%= javascript_include_tag "application" %>
+    10:   <%= csrf_meta_tags %>
+    11:   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1033990530_95349760'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:10:53 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap-responsive.css )` to `config/initializers/assets.rb` and restart your server):
+     5:   <title><!-- Your App Title --></title>
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <meta name="description" content="">
+     8:   <%= stylesheet_link_tag  "application", "bootstrap", "bootstrap-responsive", "font", "font-awesome", "base.css", "blue.css"%>
+     9:   <%= javascript_include_tag "application" %>
+    10:   <%= csrf_meta_tags %>
+    11:   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___349354711_87297250'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:11:49 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 289ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap-responsive.css )` to `config/initializers/assets.rb` and restart your server):
+     5:   <title><!-- Your App Title --></title>
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <meta name="description" content="">
+     8:   <%= stylesheet_link_tag  "application", "bootstrap", "bootstrap-responsive", "font", "font-awesome", "base.css", "blue.css"%>
+     9:   <%= javascript_include_tag "application" %>
+    10:   <%= csrf_meta_tags %>
+    11:   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__301525455_90606050'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (30.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (45.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:12:40 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 268ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( font.css )` to `config/initializers/assets.rb` and restart your server):
+     5:   <title><!-- Your App Title --></title>
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <meta name="description" content="">
+     8:   <%= stylesheet_link_tag  "application", "bootstrap", "bootstrap-responsive", "font", "font-awesome", "base.css", "blue.css"%>
+     9:   <%= javascript_include_tag "application" %>
+    10:   <%= csrf_meta_tags %>
+    11:   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___627344242_84372510'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (45.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:13:39 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 307ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( base.css )` to `config/initializers/assets.rb` and restart your server):
+     5:   <title><!-- Your App Title --></title>
+     6:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     7:   <meta name="description" content="">
+     8:   <%= stylesheet_link_tag  "application", "bootstrap", "bootstrap-responsive", "font", "font-awesome", "base.css", "blue.css"%>
+     9:   <%= javascript_include_tag "application" %>
+    10:   <%= csrf_meta_tags %>
+    11:   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___792201017_82465440'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:14:11 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 359ms (Views: 347.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e24b65c98dbf1e867e5ee86a248513beac696afc9d4ebd1efd46d7d76790251b.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/font.self-5096bfb70b417fb9382f3d7ff2500e4dd34429d6825ecc88980c5cb11e79cf00.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/bootstrap.self-756458212dbba41cdfd4d923a19c6aecedfe8e4f849d3846fb477a2e283f7bda.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/font-awesome.self-98bac7ae7156038a388bde1d20ef39b2bbd578e718ae5be82617095f1b5ff91d.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/base.self-7ee3f3699f074a95d06dc3ae9f20a902f123531a4bd34bc2ce8d402f8e0597c8.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/bootstrap-responsive.self-14916b12cd2e801029ba52ef2a416470518b0dfb7660a9f7bbb56277e19c18c4.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/blue.self-c930490ee9b578643182b4f6caaf1e9821f4365f0b8a30bef89549570c7dde33.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/bootstrap-responsive.min.self-2c9154a1ace9a0c8c6385582b8e16698daa619fd3951bdca09d2fa1663e998ec.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/bootstrap.min.self-a3e1e69d70c0166ed3d60969d597bb38f55d657d4baf14f9e8555a20e6624346.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/font-awesome-ie7.self-aa3b8425ab2bae1bf25963ddd466e863a9e9d7056f2b99b966cea4849211844e.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/bootstrap.self-547abc8e1702ed11928e3d70f509ef3c62ed1d9a12eda5e000771096cca57dc5.js?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/jquery-1.8.2.min.self-0802d202f92fceea9a9620429185e607acb856bdba102c2a062b96f6d7432f4b.js?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/jquery.fitvids.self-4bd9a058d6abb8870e201bd7bd210c4a917d42320f6f2b04e5e09f0d5644d8e8.js?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/bootstrap.min.self-b3cb8fb4a398184b1dd250cfe178303f67fa82d01ff233d5cc2e06e7cb0dbcf1.js?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/application.self-29c15a76104243fc4fab0b953f6571b7056bbebdb2b4019eaab82bf4f241caae.js?body=1" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/img/logo-43a75e04e709997006c130ec5c46e1b245bb0c6fa8ee22143ab6158209783a64.gif" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/bg-landing.gif" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/sep.png" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/projects-area.gif" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/divider.png" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:14:12 -0300
+
+
+Started GET "/img/favicon.ico" for 127.0.0.1 at 2015-08-20 23:14:13 -0300
+
+ActionController::RoutingError (No route matches [GET] "/img/favicon.ico"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (47.1ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2015-08-20 23:14:26 -0300
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 216ms (Views: 214.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:14:27 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:14:27 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:14:27 -0300
+
+
+Started GET "/pages/img/favicon.ico" for 127.0.0.1 at 2015-08-20 23:14:27 -0300
+
+ActionController::RoutingError (No route matches [GET] "/pages/img/favicon.ico"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (39.6ms)
+
+
+Started GET "/pages/features" for 127.0.0.1 at 2015-08-20 23:14:30 -0300
+Processing by PagesController#features as HTML
+  Rendered pages/features.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 130ms (Views: 129.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:14:31 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:14:31 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:14:31 -0300
+
+
+Started GET "/pages/login" for 127.0.0.1 at 2015-08-20 23:14:37 -0300
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 140ms (Views: 139.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:14:38 -0300
+
+
+Started GET "/pages/register" for 127.0.0.1 at 2015-08-20 23:14:39 -0300
+Processing by PagesController#register as HTML
+  Rendered pages/register.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 150ms (Views: 149.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:14:39 -0300
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2015-08-20 23:14:44 -0300
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 145ms (Views: 143.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:14:44 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:14:44 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:14:44 -0300
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2015-08-20 23:15:18 -0300
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 137ms (Views: 136.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:15:18 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:15:18 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:15:18 -0300
+
+
+Started GET "/pages/features" for 127.0.0.1 at 2015-08-20 23:15:20 -0300
+Processing by PagesController#features as HTML
+  Rendered pages/features.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 144ms (Views: 143.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:15:20 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:15:20 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:15:20 -0300
+
+
+Started GET "/pages/index.html" for 127.0.0.1 at 2015-08-20 23:15:23 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 142ms (Views: 141.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:15:23 -0300
+
+
+Started GET "/assets/bg-landing.gif" for 127.0.0.1 at 2015-08-20 23:15:23 -0300
+
+
+Started GET "/assets/divider.png" for 127.0.0.1 at 2015-08-20 23:15:23 -0300
+
+
+Started GET "/assets/sep.png" for 127.0.0.1 at 2015-08-20 23:15:23 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:15:23 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:15:23 -0300
+
+
+Started GET "/assets/projects-area.gif" for 127.0.0.1 at 2015-08-20 23:15:23 -0300
+
+
+Started GET "/pages/register" for 127.0.0.1 at 2015-08-20 23:15:44 -0300
+Processing by PagesController#register as HTML
+  Rendered pages/register.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 132ms (Views: 130.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:15:44 -0300
+
+
+Started GET "/pages/login" for 127.0.0.1 at 2015-08-20 23:15:47 -0300
+Processing by PagesController#login as HTML
+  Rendered pages/login.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 139ms (Views: 137.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:15:47 -0300
+
+
+Started GET "/pages/contact" for 127.0.0.1 at 2015-08-20 23:15:52 -0300
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 141ms (Views: 140.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:15:52 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:15:52 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:15:52 -0300
+
+
+Started GET "/pages/index.html" for 127.0.0.1 at 2015-08-20 23:16:46 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 132ms (Views: 131.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/noise.gif" for 127.0.0.1 at 2015-08-20 23:16:47 -0300
+
+
+Started GET "/assets/bg-landing.gif" for 127.0.0.1 at 2015-08-20 23:16:47 -0300
+
+
+Started GET "/assets/bg-footer.gif" for 127.0.0.1 at 2015-08-20 23:16:47 -0300
+
+
+Started GET "/assets/sep.png" for 127.0.0.1 at 2015-08-20 23:16:47 -0300
+
+
+Started GET "/assets/projects-area.gif" for 127.0.0.1 at 2015-08-20 23:16:47 -0300
+
+
+Started GET "/assets/divider.png" for 127.0.0.1 at 2015-08-20 23:16:47 -0300
+
+
+Started GET "/assets/bg-copywrite.gif" for 127.0.0.1 at 2015-08-20 23:16:47 -0300
+
+
+Started GET "/pages/index.html" for 127.0.0.1 at 2015-08-20 23:35:58 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (328.0ms)
+Completed 200 OK in 1499ms (Views: 1486.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/bootstrap-responsive.self-c9abc6d5636b33d8a93a5a3d76a06244fd29d6319cf70fd3618a188c4981e892.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/font-awesome.self-37d5738d1d73cb100044949673d4098b1ae6d50a81647214b29238c70c3e7730.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/font-awesome-ie7.self-8f3e84cc480b74fb4b925e20020dfbd05479370f23d9df3578a732af93eb9a0d.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/bootstrap.self-b32d04fa8b5640a79a21d4dfdccb17de5006f3afa72ea8e5541ce57b841305c2.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/font.self-fa25786f6ce2858c9d061bdafd15371e6024905130a008b131bf3cb33ba83b7f.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/isotype.self-ccc603929208890d0cf3e204102774e391cee4b88ebf76b1d0b061ce949703b0.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/prettyPhoto.self-9653bb498c0ae22385eff9bfa40c602eb0964e8172244117d70e152ddef7235d.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/style.self-8ee486618dd92e7f2ec95fbd49980eca24475d2bb3b83dcce9ae3b85b0adc470.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/jquery.self-8ec3340c9c7cc395cdecf88b1f7758bd1c352654277e94354c1e19c4b174f54e.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/bootstrap.self-b3cb8fb4a398184b1dd250cfe178303f67fa82d01ff233d5cc2e06e7cb0dbcf1.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/custom.self-93307d19a912c095036ae2e1e88d01d2bff85e6e1e20d1fbed5d7be3d9d31ff6.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/easing.self-c85028b4485f3b7e91508aa9891cfeb41a8884efd87672715de3fa1ae2173948.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/isotype.self-8f2e078124391ef87e9f366c66badf7e9053bb76d22fd517e5c08518814d49b1.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/html5shim.self-2017204636d5bb2b5c54e79691ead0fb912a4b36c9a806de51ee3f8c03eea761.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/jquery.prettyPhoto.self-05b3598439955b7aa21a889b4fbe4fe6ea3ea2c1c6da5214585bea39e4001c55.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/jquery.tweet.self-f70bc5cb2ebc1756801590f01086b07bdb0ddb99760330405ab4040df973658c.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/application.self-763edc40ac487adacabb9d8ff726cd3e8d38c640ad7af95ff25fde0f4dbdfe7c.js?body=1" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/img/banner-e2699277d66b2465643a58aeaeb999a79c0b9ad3b72f380e3b78337434fc33af.png" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/img/photos/tn_1-23b088da2e75c7ba68b3039053ec0c00c082ed3e2ce6b229e6d6a5799fc5dec8.jpg" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/img/photos/tn_2-f4aafca2ef551388067cb54f7c99a38e64c9aef06acb3a71a4824f4238861f8c.jpg" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/img/photos/tn_3-d7ea5979785b2adb5251f5cc5bf39b92e56eb7f4d85bf99c4cc270b0efbad25c.jpg" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/img/testi2-0ec2d42a4f2afada1976096d55d3db06c678490203a438c66ef9e1ab52cab831.jpg" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/img/testi1-9eee3222c4ad62dbe4fa0c2d5a9a78d25421bb58cf1921922c97f37af20294c8.jpg" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/img/photos/tn_4-10a36b6fa31bc5ac70222164bbce5df63f7f3eb75bd1c5d2dee82ae98313a176.jpg" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+
+Started GET "/assets/pts75f.woff" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/pts75f.woff"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.6ms)
+
+
+Started GET "/font-awesome/fontawesome-webfont.woff" for 127.0.0.1 at 2015-08-20 23:36:00 -0300
+
+ActionController::RoutingError (No route matches [GET] "/font-awesome/fontawesome-webfont.woff"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.5ms)
+
+
+Started GET "/assets/img/twitter-img-8b8b186b6ecf2712979557dabfb7677c1af2625bec0e2d79e4d4d83ab8c2740e.jpg" for 127.0.0.1 at 2015-08-20 23:36:01 -0300
+
+
+Started GET "/assets/img/linkedin-d71e27762a0fdab1e7902cf454e3c6ba9446c876f6be36372e8bb30266e03215.png" for 127.0.0.1 at 2015-08-20 23:36:01 -0300
+
+
+Started GET "/assets/img/twitter-71fdec939536a133eb73c350f9de03b9d709c035877448cb55cbda6db02ebc35.png" for 127.0.0.1 at 2015-08-20 23:36:01 -0300
+
+
+Started GET "/assets/img/vimeo-f2668e0a6e4aa3fd34fa6ed8289b45f69dc4ace95f2ea3e5e60dabc939ba14f9.png" for 127.0.0.1 at 2015-08-20 23:36:01 -0300
+
+
+Started GET "/assets/pts75f.ttf" for 127.0.0.1 at 2015-08-20 23:36:01 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/pts75f.ttf"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.4ms)
+
+
+Started GET "/assets/img/facebook-0a99739775a4dcd761f0e8e36159a1a980a73fb0221683e7c4cd901a240c235c.png" for 127.0.0.1 at 2015-08-20 23:36:01 -0300
+
+
+Started GET "/font-awesome/fontawesome-webfont.ttf" for 127.0.0.1 at 2015-08-20 23:36:01 -0300
+
+ActionController::RoutingError (No route matches [GET] "/font-awesome/fontawesome-webfont.ttf"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.3ms)
+
+
+Started GET "/assets/img/blog-3f45184ba99bc68465cbffccfe5d5d09008ff91cf6e9a0491b82f2e9e4ec0587.png" for 127.0.0.1 at 2015-08-20 23:36:01 -0300
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2015-08-20 23:36:01 -0300
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:36:39 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (41.5ms)
+Completed 200 OK in 133ms (Views: 132.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/bootstrap-responsive.self-c9abc6d5636b33d8a93a5a3d76a06244fd29d6319cf70fd3618a188c4981e892.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/font.self-fa25786f6ce2858c9d061bdafd15371e6024905130a008b131bf3cb33ba83b7f.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/font-awesome-ie7.self-8f3e84cc480b74fb4b925e20020dfbd05479370f23d9df3578a732af93eb9a0d.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/bootstrap.self-b32d04fa8b5640a79a21d4dfdccb17de5006f3afa72ea8e5541ce57b841305c2.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/font-awesome.self-37d5738d1d73cb100044949673d4098b1ae6d50a81647214b29238c70c3e7730.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/isotype.self-ccc603929208890d0cf3e204102774e391cee4b88ebf76b1d0b061ce949703b0.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/prettyPhoto.self-9653bb498c0ae22385eff9bfa40c602eb0964e8172244117d70e152ddef7235d.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/style.self-8ee486618dd92e7f2ec95fbd49980eca24475d2bb3b83dcce9ae3b85b0adc470.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/jquery.self-8ec3340c9c7cc395cdecf88b1f7758bd1c352654277e94354c1e19c4b174f54e.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/bootstrap.self-b3cb8fb4a398184b1dd250cfe178303f67fa82d01ff233d5cc2e06e7cb0dbcf1.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/custom.self-93307d19a912c095036ae2e1e88d01d2bff85e6e1e20d1fbed5d7be3d9d31ff6.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/easing.self-c85028b4485f3b7e91508aa9891cfeb41a8884efd87672715de3fa1ae2173948.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/html5shim.self-2017204636d5bb2b5c54e79691ead0fb912a4b36c9a806de51ee3f8c03eea761.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/isotype.self-8f2e078124391ef87e9f366c66badf7e9053bb76d22fd517e5c08518814d49b1.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/jquery.prettyPhoto.self-05b3598439955b7aa21a889b4fbe4fe6ea3ea2c1c6da5214585bea39e4001c55.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/jquery.tweet.self-f70bc5cb2ebc1756801590f01086b07bdb0ddb99760330405ab4040df973658c.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/application.self-763edc40ac487adacabb9d8ff726cd3e8d38c640ad7af95ff25fde0f4dbdfe7c.js?body=1" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/img/logo.png" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+ActionController::RoutingError (No route matches [GET] "/img/logo.png"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.3ms)
+
+
+Started GET "/assets/img/photos/tn_4-10a36b6fa31bc5ac70222164bbce5df63f7f3eb75bd1c5d2dee82ae98313a176.jpg" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/img/photos/tn_2-f4aafca2ef551388067cb54f7c99a38e64c9aef06acb3a71a4824f4238861f8c.jpg" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/img/photos/tn_3-d7ea5979785b2adb5251f5cc5bf39b92e56eb7f4d85bf99c4cc270b0efbad25c.jpg" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/img/photos/tn_1-23b088da2e75c7ba68b3039053ec0c00c082ed3e2ce6b229e6d6a5799fc5dec8.jpg" for 127.0.0.1 at 2015-08-20 23:38:52 -0300
+
+
+Started GET "/assets/img/banner-e2699277d66b2465643a58aeaeb999a79c0b9ad3b72f380e3b78337434fc33af.png" for 127.0.0.1 at 2015-08-20 23:38:53 -0300
+
+
+Started GET "/assets/img/testi2-0ec2d42a4f2afada1976096d55d3db06c678490203a438c66ef9e1ab52cab831.jpg" for 127.0.0.1 at 2015-08-20 23:38:53 -0300
+
+
+Started GET "/assets/img/testi1-9eee3222c4ad62dbe4fa0c2d5a9a78d25421bb58cf1921922c97f37af20294c8.jpg" for 127.0.0.1 at 2015-08-20 23:38:53 -0300
+
+
+Started GET "/assets/img/twitter-img-8b8b186b6ecf2712979557dabfb7677c1af2625bec0e2d79e4d4d83ab8c2740e.jpg" for 127.0.0.1 at 2015-08-20 23:38:53 -0300
+
+
+Started GET "/assets/img/twitter-71fdec939536a133eb73c350f9de03b9d709c035877448cb55cbda6db02ebc35.png" for 127.0.0.1 at 2015-08-20 23:38:53 -0300
+
+
+Started GET "/assets/img/linkedin-d71e27762a0fdab1e7902cf454e3c6ba9446c876f6be36372e8bb30266e03215.png" for 127.0.0.1 at 2015-08-20 23:38:53 -0300
+
+
+Started GET "/assets/img/vimeo-f2668e0a6e4aa3fd34fa6ed8289b45f69dc4ace95f2ea3e5e60dabc939ba14f9.png" for 127.0.0.1 at 2015-08-20 23:38:53 -0300
+
+
+Started GET "/assets/img/facebook-0a99739775a4dcd761f0e8e36159a1a980a73fb0221683e7c4cd901a240c235c.png" for 127.0.0.1 at 2015-08-20 23:38:53 -0300
+
+
+Started GET "/assets/img/blog-3f45184ba99bc68465cbffccfe5d5d09008ff91cf6e9a0491b82f2e9e4ec0587.png" for 127.0.0.1 at 2015-08-20 23:38:53 -0300
+
+
+Started GET "/blog-main.html" for 127.0.0.1 at 2015-08-20 23:38:59 -0300
+
+ActionController::RoutingError (No route matches [GET] "/blog-main.html"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.8ms)
+
+
+Started GET "/contact.html" for 127.0.0.1 at 2015-08-20 23:39:35 -0300
+
+ActionController::RoutingError (No route matches [GET] "/contact.html"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.1ms)
+
+
+Started GET "/contact.html" for 127.0.0.1 at 2015-08-20 23:41:15 -0300
+
+ActionController::RoutingError (No route matches [GET] "/contact.html"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.0ms)
+
+
+Started GET "/contact.html" for 127.0.0.1 at 2015-08-20 23:47:23 -0300
+
+ActionController::RoutingError (No route matches [GET] "/contact.html"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (38.0ms)
+
+
+Started GET "/contact.html" for 127.0.0.1 at 2015-08-20 23:47:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/contact.html"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (38.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:48:10 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (210.1ms)
+Completed 200 OK in 317ms (Views: 305.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/logo.png" for 127.0.0.1 at 2015-08-20 23:48:10 -0300
+
+ActionController::RoutingError (No route matches [GET] "/img/logo.png"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.9ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at 2015-08-20 23:48:13 -0300
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 135ms (Views: 133.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/img/logo.png" for 127.0.0.1 at 2015-08-20 23:48:13 -0300
+
+ActionController::RoutingError (No route matches [GET] "/pages/img/logo.png"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (30.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (58.1ms)
+
+
+Started GET "/assets/pts55f.woff" for 127.0.0.1 at 2015-08-20 23:48:13 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/pts55f.woff"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.7ms)
+
+
+Started GET "/assets/pts55f.ttf" for 127.0.0.1 at 2015-08-20 23:48:13 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/pts55f.ttf"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:53:56 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (207.4ms)
+Completed 200 OK in 312ms (Views: 300.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/logo.png" for 127.0.0.1 at 2015-08-20 23:53:56 -0300
+
+ActionController::RoutingError (No route matches [GET] "/img/logo.png"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (72.1ms)
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2015-08-20 23:53:57 -0300
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.1ms)
+
+
+Started GET "/assets/pts75f.woff" for 127.0.0.1 at 2015-08-20 23:53:57 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/pts75f.woff"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (39.6ms)
+
+
+Started GET "/font-awesome/fontawesome-webfont.woff" for 127.0.0.1 at 2015-08-20 23:53:57 -0300
+
+ActionController::RoutingError (No route matches [GET] "/font-awesome/fontawesome-webfont.woff"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.7ms)
+
+
+Started GET "/assets/pts75f.ttf" for 127.0.0.1 at 2015-08-20 23:53:57 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/pts75f.ttf"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (47.8ms)
+
+
+Started GET "/font-awesome/fontawesome-webfont.ttf" for 127.0.0.1 at 2015-08-20 23:53:57 -0300
+
+ActionController::RoutingError (No route matches [GET] "/font-awesome/fontawesome-webfont.ttf"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:54:00 -0300
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 168ms (Views: 167.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.self-c9abc6d5636b33d8a93a5a3d76a06244fd29d6319cf70fd3618a188c4981e892.css?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/bootstrap.self-b32d04fa8b5640a79a21d4dfdccb17de5006f3afa72ea8e5541ce57b841305c2.css?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/font-awesome-ie7.self-8f3e84cc480b74fb4b925e20020dfbd05479370f23d9df3578a732af93eb9a0d.css?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/font-awesome.self-37d5738d1d73cb100044949673d4098b1ae6d50a81647214b29238c70c3e7730.css?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/font.self-fa25786f6ce2858c9d061bdafd15371e6024905130a008b131bf3cb33ba83b7f.css?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/isotype.self-ccc603929208890d0cf3e204102774e391cee4b88ebf76b1d0b061ce949703b0.css?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/prettyPhoto.self-9653bb498c0ae22385eff9bfa40c602eb0964e8172244117d70e152ddef7235d.css?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/style.self-8ee486618dd92e7f2ec95fbd49980eca24475d2bb3b83dcce9ae3b85b0adc470.css?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/jquery.self-8ec3340c9c7cc395cdecf88b1f7758bd1c352654277e94354c1e19c4b174f54e.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/bootstrap.self-b3cb8fb4a398184b1dd250cfe178303f67fa82d01ff233d5cc2e06e7cb0dbcf1.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/custom.self-93307d19a912c095036ae2e1e88d01d2bff85e6e1e20d1fbed5d7be3d9d31ff6.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/easing.self-c85028b4485f3b7e91508aa9891cfeb41a8884efd87672715de3fa1ae2173948.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/html5shim.self-2017204636d5bb2b5c54e79691ead0fb912a4b36c9a806de51ee3f8c03eea761.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/isotype.self-8f2e078124391ef87e9f366c66badf7e9053bb76d22fd517e5c08518814d49b1.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/jquery.prettyPhoto.self-05b3598439955b7aa21a889b4fbe4fe6ea3ea2c1c6da5214585bea39e4001c55.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/jquery.tweet.self-f70bc5cb2ebc1756801590f01086b07bdb0ddb99760330405ab4040df973658c.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/application.self-763edc40ac487adacabb9d8ff726cd3e8d38c640ad7af95ff25fde0f4dbdfe7c.js?body=1" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/img/logo.png" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+ActionController::RoutingError (No route matches [GET] "/img/logo.png"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.0ms)
+
+
+Started GET "/assets/img/photos/tn_1-23b088da2e75c7ba68b3039053ec0c00c082ed3e2ce6b229e6d6a5799fc5dec8.jpg" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/photos/tn_2-f4aafca2ef551388067cb54f7c99a38e64c9aef06acb3a71a4824f4238861f8c.jpg" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/photos/tn_4-10a36b6fa31bc5ac70222164bbce5df63f7f3eb75bd1c5d2dee82ae98313a176.jpg" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/photos/tn_3-d7ea5979785b2adb5251f5cc5bf39b92e56eb7f4d85bf99c4cc270b0efbad25c.jpg" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/banner-e2699277d66b2465643a58aeaeb999a79c0b9ad3b72f380e3b78337434fc33af.png" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/testi2-0ec2d42a4f2afada1976096d55d3db06c678490203a438c66ef9e1ab52cab831.jpg" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/testi1-9eee3222c4ad62dbe4fa0c2d5a9a78d25421bb58cf1921922c97f37af20294c8.jpg" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/twitter-img-8b8b186b6ecf2712979557dabfb7677c1af2625bec0e2d79e4d4d83ab8c2740e.jpg" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/linkedin-d71e27762a0fdab1e7902cf454e3c6ba9446c876f6be36372e8bb30266e03215.png" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/twitter-71fdec939536a133eb73c350f9de03b9d709c035877448cb55cbda6db02ebc35.png" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/vimeo-f2668e0a6e4aa3fd34fa6ed8289b45f69dc4ace95f2ea3e5e60dabc939ba14f9.png" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/facebook-0a99739775a4dcd761f0e8e36159a1a980a73fb0221683e7c4cd901a240c235c.png" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/assets/img/blog-3f45184ba99bc68465cbffccfe5d5d09008ff91cf6e9a0491b82f2e9e4ec0587.png" for 127.0.0.1 at 2015-08-20 23:54:01 -0300
+
+
+Started GET "/pages/contact" for 127.0.0.1 at 2015-08-20 23:54:03 -0300
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 110ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/img/logo.png" for 127.0.0.1 at 2015-08-20 23:54:03 -0300
+
+ActionController::RoutingError (No route matches [GET] "/pages/img/logo.png"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (24.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (49.7ms)
+
+
+Started GET "/assets/pts55f.woff" for 127.0.0.1 at 2015-08-20 23:54:03 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/pts55f.woff"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.5ms)
+
+
+Started GET "/assets/pts55f.ttf" for 127.0.0.1 at 2015-08-20 23:54:03 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/pts55f.ttf"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (66.4ms)
+
+
+Started GET "/pages/portfolio.html" for 127.0.0.1 at 2015-08-20 23:54:07 -0300
+Processing by PagesController#portfolio as HTML
+  Rendered pages/portfolio.html.erb within layouts/application (64.1ms)
+Completed 200 OK in 140ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/img/logo.png" for 127.0.0.1 at 2015-08-20 23:54:07 -0300
+
+ActionController::RoutingError (No route matches [GET] "/pages/img/logo.png"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.1ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.7ms)
+
+
+Started GET "/img/dot.png" for 127.0.0.1 at 2015-08-20 23:54:07 -0300
+
+ActionController::RoutingError (No route matches [GET] "/img/dot.png"):
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4.rc1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4.rc1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4.rc1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4.rc1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4.rc1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ivanglish/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ivanglish/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.0ms)
