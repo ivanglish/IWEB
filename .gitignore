@@ -18,4 +18,4 @@ certs/
 .env.test
 public/capybara.html
 public/assets/
-vendor/bundle
+/vendor/*
