@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "pages/portfolio"
   get "pages/two_column"
 
+
   root 'pages#index'
 
 
