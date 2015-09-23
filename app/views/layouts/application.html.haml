@@ -1,14 +1,54 @@
 !!!
 %html
   %head
-    %title= "sign in please to continue..."
+    %title= "IWEB"
     = stylesheet_link_tag :application, :media => 'all'
+    = javascript_include_tag :application
     = csrf_meta_tags
   %body{class: ''}
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
-          %a {:class => "btn btn-navbar", :data-toggle => "collapse", :data-target => ".nav-collapse"}
-            %span (:class => icon-bar}
+          = link_to 'https://websitelink.com/', class: "btn btn-navbar", "data-toggle": "collapse", "data-target": ".nav-collapse" do
             %span.icon-bar
             %span.icon-bar
+            %span.icon-bar
+          %h1
+            = link_to pages_index_path , class: "brand" do
+              %img{:src => asset_path('img/logo.png')}
+          .nav-collapse
+            <!-- Navigation links -->
+            %ul.nav
+              <!-- Each links should be given inside "li" tag -->
+              %li
+                = link_to pages_index_path do
+                  %p Home
+              %li.dropdown
+                = link_to '#' , class: "dropdown-toggle" , "data-toggle": "dropdown" do
+                  Pages
+                  %i.icon-caret-down
+                %ul.dropdown-menu
+                  %li
+                    = link_to pages_full_width_path do
+                      %p Full with
+                  %li
+                    = link_to pages_two_column_path do
+                      %p Two column
+              %li.dropdown
+                = link_to '#' , class: "dropdown-toggle" , "data-toggle": "dropdown" do
+                  Blogs
+                  %i.icon-caret-down
+                %ul.dropdown-menu
+                  %li
+                    = link_to pages_blog_main_path do
+                      %p Blog main
+                  %li
+                    = link_to pages_blog_single_path do
+                      %p single blog
+              %li
+                = link_to pages_portfolio_path do
+                  %p Portfolio
+              %li
+                = link_to pages_contact_path do
+                  %p Contact
+  = yield
