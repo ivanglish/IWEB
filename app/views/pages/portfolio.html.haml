@@ -1,0 +1,131 @@
+.bor
+.main
+  .container
+    .tite
+      .row
+        .span12
+          / Big title
+          %p.tit
+            Ut ut sapien vitae elit
+            %span imperdiet lacinia non sodales enim
+          / Para
+          %p.tpara Sed vitae tellus augue, non malesuada ante. Fusce rutrum ante non nisi blandit aliquet. Ut aliquet eros vel nisl accumsan luctus.
+    .content.portfolio
+      .row
+        .span12
+          / Page title
+          %h2
+            %b Portfolio
+          %p
+            / Add filter names inside "data-filter". For example ".web-design", ".seo", etc., Filter names are used to filter the below images.
+            %ul#filters
+              %li
+                %a.label.label-info{"data-filter" => "*", :href => "#"} All
+              %li
+                %a.label.label-info{"data-filter" => ".one", :href => "#"} One
+              %li
+                %a.label.label-info{"data-filter" => ".two", :href => "#"} Two
+              %li
+                %a.label.label-info{"data-filter" => ".three", :href => "#"} Three
+              %li
+                %a.label.label-info{"data-filter" => ".four", :href => "#"} Four
+              %li
+                %a.label.label-info{"data-filter" => ".five", :href => "#"} Five
+          .border
+          #portfolio
+            / Add the above used filter names inside div tag. You can add more than one filter names. For image lightbox you need to include "a" tag pointing to image link, along with the class "prettyPhoto[pp_gal]".
+            .element.one.three
+              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/1.jpg')}
+                %img{:alt => "", :src => asset_path('img/photos/tn_1.jpg')}/
+            .element.two.one
+              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/2.jpg')}
+                %img{:alt => "", :src => asset_path('img/photos/tn_2.jpg')}/
+            .element.three.five
+              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/3.jpg')}
+                %img{:alt => "", :src => asset_path('img/photos/tn_3.jpg')}/
+            .element.four.two
+              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/4.jpg')}
+                %img{:alt => "", :src => asset_path('img/photos/tn_4.jpg')}/
+            .element.one.three
+              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/1.jpg')}
+                %img{:alt => "", :src => asset_path('img/photos/tn_1.jpg')}/
+            .element.two.one
+              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/2.jpg')}
+                %img{:alt => "", :src => asset_path('img/photos/tn_2.jpg')}/
+            .element.three.five
+              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/3.jpg')}
+                %img{:alt => "", :src => asset_path('img/photos/tn_3.jpg')}/
+            .element.four.two
+              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/4.jpg')}
+                %img{:alt => "", :src => asset_path('img/photos/tn_4.jpg')}/
+          .border
+  / End of container
+  / Foot
+  .foot
+    .container
+      / Foot contents should be added inside class "fwidget"
+      .row
+        .span4
+          / Twitter feed
+          .fwidget
+            / Title
+            %h4 Twitter Feed
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
+                  %br
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
+                  %br
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
+                  %br
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+        .span4
+          .fwidget
+            / Subscribe
+            / Title
+            %h4 Subscribe
+            / Para
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ante at diam pulvinar molestie. Vestibulum ac quam ante, a laoreet risus. Suspendisse pharetra, nibh et sodales tristique, nulla nisl laoreet nulla, eget imperdiet
+            / Form
+            %form.form-inline
+              %input.input-large{:placeholder => "Enter your email", :type => "text"}
+                %button.btn.btn-warning{:type => "submit"} Subscribe
+        .span4
+          .fwidget
+            / About us widget
+            / Title
+            %h4 About Us
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. Sed mauris nibh, congue quis tincidunt vitae, tincidunt non nisi. Vivamus a auctor quam. Donec posuere molestie lacinia.
+            / Social media icons
+            .social
+              %a.tip{"data-original-title" => "Facebook", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/linkedin.png')}/
+              %a.tip{"data-original-title" => "Twitter", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/twitter.png')}/
+              %a.tip{"data-original-title" => "Google Plus", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/vimeo.png')}/
+              %a.tip{"data-original-title" => "pInterest", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/facebook.png')}/
+              %a.tip{"data-original-title" => "LinkedIn", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/blog.png')}/

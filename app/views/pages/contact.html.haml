@@ -1,0 +1,142 @@
+.bor
+.main
+  .container
+    .tite
+      .row
+        .span12
+          / Title
+          %p.tit
+            Ut ut sapien vitae elit
+            %span imperdiet lacinia non sodales enim
+          / Para
+          %p.tpara Sed vitae tellus augue, non malesuada ante. Fusce rutrum ante non nisi blandit aliquet. Ut aliquet eros vel nisl accumsan luctus.
+          / Contact page title
+          %h2
+            %b Contact Page
+    .content.contact
+      .row
+        .span8
+          / Google map
+          .gmap
+            / Google Maps. Replace the below iframe with your Google Maps embed code
+            %iframe{:frameborder => "0", :height => "231", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Google+India+Bangalore,+Bennigana+Halli,+Bangalore,+Karnataka&amp;aq=0&amp;oq=google+&amp;sll=9.930582,78.12303&amp;sspn=0.192085,0.308647&amp;ie=UTF8&amp;hq=Google&amp;hnear=Bennigana+Halli,+Bangalore,+Bengaluru+Urban,+Karnataka&amp;t=m&amp;ll=12.993518,77.660294&amp;spn=0.012545,0.036006&amp;z=15&amp;output=embed"}
+          .form
+            / Contact form (not working)
+            %form.form-horizontal
+              %fieldset
+                / Contact form title
+                %legend Contact Us
+                / Contact form para
+                %p Aliquam erat volutpat. Vestibulum molestie consectetur risus, id facilisis velit aliquet sed. Ut augue nisi, laoreet eu aliquam in, tempor vitae mi.
+                .control-group
+                  %label.control-label{:for => "name"} Name
+                  .controls
+                    %input#name.input-medium{:type => "text"}
+                .control-group
+                  %label.control-label{:for => "email"} Email
+                  .controls
+                    %input#email.input-medium{:type => "text"}
+                .control-group
+                  %label.control-label{:for => "comment"} Comment
+                  .controls
+                    %textarea#comment.input-madium{:rows => "3"}
+                .form-actions
+                  / Buttons
+                  %button.btn.btn-primary{:type => "submit"} Submit
+                  %button.btn{:type => "reset"} Reset
+        .span4
+          .sidebar
+            .well
+              / Address
+              %h3 Address
+              .address
+                %address
+                  / Company name
+                  %strong Sixnode, Inc.
+                  %br
+                    / Address
+                    Railsview.com
+                    %br
+                      401 Richmond St. West
+                      %br
+                        Suite 409 Toronto, ON, M5V 3A8
+                        %br
+                          / Phone number
+                          %abbr{:title => "Phone"} P:
+                          (123) 456-7890.
+                %address
+                  / Name
+                  %strong Full Name
+                  %br
+                    / Email
+                    %a{:href => "mailto:#"} first.last@gmail.com
+  / End of container
+  / Foot
+  .foot
+    .container
+      / Foot contents should be added inside class "fwidget"
+      .row
+        .span4
+          / Twitter feed
+          .fwidget
+            / Title
+            %h4 Twitter Feed
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
+                  %br
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
+                  %br
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
+                  %br
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+        .span4
+          .fwidget
+            / Subscribe
+            / Title
+            %h4 Subscribe
+            / Para
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ante at diam pulvinar molestie. Vestibulum ac quam ante, a laoreet risus. Suspendisse pharetra, nibh et sodales tristique, nulla nisl laoreet nulla, eget imperdiet
+            / Form
+            %form.form-inline
+              %input.input-large{:placeholder => "Enter your email", :type => "text"}
+                %button.btn.btn-warning{:type => "submit"} Subscribe
+        .span4
+          .fwidget
+            / About us widget
+            / Title
+            %h4 About Us
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. Sed mauris nibh, congue quis tincidunt vitae, tincidunt non nisi. Vivamus a auctor quam. Donec posuere molestie lacinia.
+            / Social media icons
+            .social
+              %a.tip{"data-original-title" => "Facebook", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/linkedin.png')}/
+              %a.tip{"data-original-title" => "Twitter", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/twitter.png')}/
+              %a.tip{"data-original-title" => "Google Plus", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/vimeo.png')}/
+              %a.tip{"data-original-title" => "pInterest", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/facebook.png')}/
+              %a.tip{"data-original-title" => "LinkedIn", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/blog.png')}/

@@ -1,0 +1,182 @@
+.bor
+.main
+  .container
+    .tite
+      .row
+        .span12
+          / Big title
+          %p.tit
+            Ut ut sapien vitae elit
+            %span imperdiet lacinia non sodales enim
+          / Para
+          %p.tpara Sed vitae tellus augue, non malesuada ante. Fusce rutrum ante non nisi blandit aliquet. Ut aliquet eros vel nisl accumsan luctus.
+          / Page title
+          %h2
+            %b Blog
+    .content.two-column
+      .row
+        .span8
+          / Left column
+          / Blog posts. Each post should be enclosed inside "entry" class
+          .posts
+            .entry
+              / Post title
+              %h2
+                %a{:href => "#"} Pellentesque habitant morbi tristique
+              / Post meta information
+              %p.meta
+                %i.icon-calendar>
+                \&nbsp; 12/08/2012 -
+                = succeed "&amp;nbsp;" do
+                  %i.icon-user
+                Ashok -
+                = succeed "&amp;nbsp;" do
+                  %i.icon-folder-close
+                = succeed "," do
+                  %a{:href => "#"} Diam
+                %a{:href => "#"} Bestibulum
+                \-
+                = succeed "&amp;nbsp;" do
+                  %i.icon-tags
+                = succeed "," do
+                  %a{:href => "#"} Iam
+                %a{:href => "#"} Bulum
+              / Post para
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ipsum risus, in pharetra sem. Nam sit amet arcu nunc, a fermentum velit. Suspendisse libero massa, vulputate eu facilisis non, condimentum ut magna. Nam lobortis, orci sit amet pretium luctus, nibh eros pellentesque ante, mollis malesuada tellus purus volutpat sem. Proin pulvinar, diam non varius gravida, leo sapien imperdiet lorem, sit amet imperdiet risus nisl sed neque. Vestibulum eu felis eu eros semper malesuada. Cras enim quam, tempus non iaculis eget, mollis id ligula. Praesent est libero, elementum nec ullamcorper a, semper in mi. Donec ultrices mi nec mi ultricies vitae sagittis nulla lacinia. In rutrum felis quis odio placerat malesuada.
+              %p Suspendisse potenti. Suspendisse potenti. In quis dolor sed tellus ornare luctus. Praesent euismod fringilla rutrum. Sed ultrices pulvinar lobortis. Fusce eros leo, posuere non blandit scelerisque, consectetur sit amet massa. Sed interdum bibendum leo sed facilisis. Mauris egestas, tellus ut gravida tristique, arcu eros tristique tortor, in dapibus risus tellus non dui. Maecenas ut turpis ante. Sed pretium, sem ac aliquet cursus, tortor lectus aliquam justo, in bibendum odio massa vitae arcu. Nullam fermentum molestie faucibus. Nulla id rhoncus ante. Pellentesque bibendum euismod sapien in rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .border
+            .entry
+              %h2
+                %a{:href => "#"} Lorem ipsum dolor sit amet consectetur
+              %p.meta
+                %i.icon-calendar>
+                \&nbsp; 12/08/2012 -
+                = succeed "&amp;nbsp;" do
+                  %i.icon-user
+                Ashok -
+                = succeed "&amp;nbsp;" do
+                  %i.icon-folder-close
+                = succeed "," do
+                  %a{:href => "#"} Diam
+                %a{:href => "#"} Bestibulum
+                \-
+                = succeed "&amp;nbsp;" do
+                  %i.icon-tags
+                = succeed "," do
+                  %a{:href => "#"} Iam
+                %a{:href => "#"} Bulum
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ipsum risus, in pharetra sem. Nam sit amet arcu nunc, a fermentum velit. Suspendisse libero massa, vulputate eu facilisis non, condimentum ut magna. Nam lobortis, orci sit amet pretium luctus, nibh eros pellentesque ante, mollis malesuada tellus purus volutpat sem. Proin pulvinar, diam non varius gravida, leo sapien imperdiet lorem, sit amet imperdiet risus nisl sed neque. Vestibulum eu felis eu eros semper malesuada. Cras enim quam, tempus non iaculis eget, mollis id ligula. Praesent est libero, elementum nec ullamcorper a, semper in mi. Donec ultrices mi nec mi ultricies vitae sagittis nulla lacinia. In rutrum felis quis odio placerat malesuada.
+              %p Suspendisse potenti. Suspendisse potenti. In quis dolor sed tellus ornare luctus. Praesent euismod fringilla rutrum. Sed ultrices pulvinar lobortis. Fusce eros leo, posuere non blandit scelerisque, consectetur sit amet massa. Sed interdum bibendum leo sed facilisis. Mauris egestas, tellus ut gravida tristique, arcu eros tristique tortor, in dapibus risus tellus non dui. Maecenas ut turpis ante. Sed pretium, sem ac aliquet cursus, tortor lectus aliquam justo, in bibendum odio massa vitae arcu. Nullam fermentum molestie faucibus. Nulla id rhoncus ante. Pellentesque bibendum euismod sapien in rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .border
+            / Pagination
+            %ul.pager
+              %li.previous
+                %a{:href => "#"} &larr; Older
+              %li.next
+                %a{:href => "#"} Newer &rarr;
+        / Right column - Sidebar
+        .span4
+          .sidebar
+            / Place each sidebar section inside the class "well"
+            .well
+              / Sidebar content title
+              %h3
+                Praesent
+                %i.icon-tag.pull-right
+              / Sidebar content
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate eros nec odio egestas in dictum nisi vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porttitor luctus imperdiet.
+            .well
+              / Sidebar content title
+              %h3
+                Search
+                %i.icon-search.pull-right
+              / Sidebar content
+              %form.form-search
+                %input.input-medium{:type => "text"}
+                  %button.btn.btn-primary.margin-left10{:type => "submit"} Search
+            / Same as above
+            .well
+              %h3
+                Categories
+                %i.icon-beaker.pull-right
+              %ul
+                %li
+                  %a{:href => "#"} Sed eu leo orci, condimentum gravida metus
+                %li
+                  %a{:href => "#"} Etiam at nulla ipsum, in rhoncus purus
+                %li
+                  %a{:href => "#"} Fusce vel magna faucibus felis dapibus facilisis
+                %li
+                  %a{:href => "#"} Vivamus scelerisque dui in massa
+                %li
+                  %a{:href => "#"} Pellentesque eget adipiscing dui semper
+  / End of container
+  / Foot
+  .foot
+    .container
+      / Foot contents should be added inside class "fwidget"
+      .row
+        .span4
+          / Twitter feed
+          .fwidget
+            / Title
+            %h4 Twitter Feed
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
+                  %br
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
+                  %br
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
+                  %br
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+        .span4
+          .fwidget
+            / Subscribe
+            / Title
+            %h4 Subscribe
+            / Para
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ante at diam pulvinar molestie. Vestibulum ac quam ante, a laoreet risus. Suspendisse pharetra, nibh et sodales tristique, nulla nisl laoreet nulla, eget imperdiet
+            / Form
+            %form.form-inline
+              %input.input-large{:placeholder => "Enter your email", :type => "text"}
+                %button.btn.btn-warning{:type => "submit"} Subscribe
+        .span4
+          .fwidget
+            / About us widget
+            / Title
+            %h4 About Us
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. Sed mauris nibh, congue quis tincidunt vitae, tincidunt non nisi. Vivamus a auctor quam. Donec posuere molestie lacinia.
+            / Social media icons
+            .social
+              %a.tip{"data-original-title" => "Facebook", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/linkedin.png')}/
+              %a.tip{"data-original-title" => "Twitter", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/twitter.png')}/
+              %a.tip{"data-original-title" => "Google Plus", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/vimeo.png')}/
+              %a.tip{"data-original-title" => "pInterest", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/facebook.png')}/
+              %a.tip{"data-original-title" => "LinkedIn", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/blog.png')}/
