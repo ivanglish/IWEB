@@ -13,162 +13,162 @@
                 %a.btn.btn-large.btn-warning{:href => "#"} View Project
       .row
         %img{:alt => "", :border => "0", :src => asset_path('img/banner.png')}
-  .main
+.main
+  .container
+    / Features
+    .features
+      .row
+        / Each features should be enclosed inside the class "widget-x". x denotes a,b,c...
+        / Features #1
+        .widget-a
+          / Icon
+          %p.icony
+            %i.icon-comments
+          / Info (i.e title)
+          .finfo
+            %h3
+              Lorem
+              %b Ipsudor
+        / Features #2
+        .widget-b
+          %p.icony
+            %i.icon-gift
+          .finfo
+            %h3
+              Lorem
+              %b Ipsudor
+        / Features #3
+        .widget-c
+          %p.icony
+            %i.icon-calendar
+          .finfo
+            %h3
+              Lorem
+              %b Ipsudor
+        / Features #4
+        .widget-d
+          %p.icony
+            %i.icon-user
+          .finfo
+            %h3
+              Lorem
+              %b Ipsudor
+    / Gallery
+    .gallery
+      .row
+        .span12
+          %h2
+            %b GALLERY
+          / Pics. Full version image link should be given in <a> tag. Thumbnail version image should be given in <img> tag.
+          .pics
+            %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/1.jpg')}
+              %img{:alt => "", :src => asset_path('img/photos/tn_1.jpg')}/
+            %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/2.jpg')}
+              %img{:alt => "", :src => asset_path('img/photos/tn_2.jpg')}/
+            %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/3.jpg')}
+              %img{:alt => "", :src => asset_path('img/photos/tn_3.jpg')}/
+            %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/4.jpg')}
+              %img{:alt => "", :src => asset_path('img/photos/tn_4.jpg')}/
+    %h2
+      %b TESTIMONIALS
+    / Testimonial section
+    .testimonial
+      .row
+        .span6
+          / Each testimonial should be given inside "testi" class
+          / Testimonial #1
+          .testi
+            / Testimonial author
+            .tauthor
+              / Author pic
+              %img{:alt => "", :src => asset_path('img/testi2.jpg')}/
+            .tinfo
+              / Quote
+              %blockquote
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ante at diam pulvinar molestie. Vestibulum ac quam ante, a laoreet risus. Sus
+                / Author details
+                %small.pull-right John Doe
+          .clearfix
+        .span6
+          / Testimonial #2
+          .testi
+            .tauthor
+              %img{:alt => "", :src => asset_path('img/testi1.jpg')}/
+            .tinfo
+              %blockquote
+                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ante at diam pulvinar molestie. Vestibulum ac quam ante, a laoreet risus. Sus
+                %small.pull-right John Doe
+          .clearfix
+    / Buttons. Replace # with your link
+    .buttons
+  / End of container
+  / Sponsors
+  / Foot
+  .foot
     .container
-      / Features
-      .features
-        .row
-          / Each features should be enclosed inside the class "widget-x". x denotes a,b,c...
-          / Features #1
-          .widget-a
-            / Icon
-            %p.icony
-              %i.icon-comments
-            / Info (i.e title)
-            .finfo
-              %h3
-                Lorem
-                %b Ipsudor
-          / Features #2
-          .widget-b
-            %p.icony
-              %i.icon-gift
-            .finfo
-              %h3
-                Lorem
-                %b Ipsudor
-          / Features #3
-          .widget-c
-            %p.icony
-              %i.icon-calendar
-            .finfo
-              %h3
-                Lorem
-                %b Ipsudor
-          / Features #4
-          .widget-d
-            %p.icony
-              %i.icon-user
-            .finfo
-              %h3
-                Lorem
-                %b Ipsudor
-      / Gallery
-      .gallery
-        .row
-          .span12
-            %h2
-              %b GALLERY
-            / Pics. Full version image link should be given in <a> tag. Thumbnail version image should be given in <img> tag.
-            .pics
-              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/1.jpg')}
-                %img{:alt => "", :src => asset_path('img/photos/tn_1.jpg')}/
-              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/2.jpg')}
-                %img{:alt => "", :src => asset_path('img/photos/tn_2.jpg')}/
-              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/3.jpg')}
-                %img{:alt => "", :src => asset_path('img/photos/tn_3.jpg')}/
-              %a{:class => "prettyPhoto[pp_gal]", :href => asset_path('img/photos/4.jpg')}
-                %img{:alt => "", :src => asset_path('img/photos/tn_4.jpg')}/
-      %h2
-        %b TESTIMONIALS
-      / Testimonial section
-      .testimonial
-        .row
-          .span6
-            / Each testimonial should be given inside "testi" class
-            / Testimonial #1
-            .testi
-              / Testimonial author
-              .tauthor
-                / Author pic
-                %img{:alt => "", :src => asset_path('img/testi2.jpg')}/
-              .tinfo
-                / Quote
-                %blockquote
-                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ante at diam pulvinar molestie. Vestibulum ac quam ante, a laoreet risus. Sus
-                  / Author details
-                  %small.pull-right John Doe
-            .clearfix
-          .span6
-            / Testimonial #2
-            .testi
-              .tauthor
-                %img{:alt => "", :src => asset_path('img/testi1.jpg')}/
-              .tinfo
-                %blockquote
-                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ante at diam pulvinar molestie. Vestibulum ac quam ante, a laoreet risus. Sus
-                  %small.pull-right John Doe
-            .clearfix
-      / Buttons. Replace # with your link
-      .buttons
-    / End of container
-    / Sponsors
-    / Foot
-    .foot
-      .container
-        / Foot contents should be added inside class "fwidget"
-        .row
-          .span4
-            / Twitter feed
-            .fwidget
-              / Title
-              %h4 Twitter Feed
-              .twitter-feed
-                %p
-                  %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
-                  %em
-                    Download my paper stack PSD from
-                    %br
-                      %small @blazrobar
-                      \#webdesign
+      / Foot contents should be added inside class "fwidget"
+      .row
+        .span4
+          / Twitter feed
+          .fwidget
+            / Title
+            %h4 Twitter Feed
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
                   %br
-                    %span 2 hours ago
-              .twitter-feed
-                %p
-                  %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
-                  %em
-                    Download my paper stack PSD from
-                    %br
-                      %small @blazrobar
-                      \#webdesign
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
                   %br
-                    %span 2 hours ago
-              .twitter-feed
-                %p
-                  %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
-                  %em
-                    Download my paper stack PSD from
-                    %br
-                      %small @blazrobar
-                      \#webdesign
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+            .twitter-feed
+              %p
+                %img{:alt => "", :src => asset_path('img/twitter-img.jpg')}/
+                %em
+                  Download my paper stack PSD from
                   %br
-                    %span 2 hours ago
-          .span4
-            .fwidget
-              / Subscribe
-              / Title
-              %h4 Subscribe
-              / Para
-              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ante at diam pulvinar molestie. Vestibulum ac quam ante, a laoreet risus. Suspendisse pharetra, nibh et sodales tristique, nulla nisl laoreet nulla, eget imperdiet
-              / Form
-              %form.form-inline
-                %input.input-large{:placeholder => "Enter your email", :type => "text"}
-                  %button.btn.btn-warning{:type => "submit"} Subscribe
-          .span4
-            .fwidget
-              / About us widget
-              / Title
-              %h4 About Us
-              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. Sed mauris nibh, congue quis tincidunt vitae, tincidunt non nisi. Vivamus a auctor quam. Donec posuere molestie lacinia.
-              / Social media icons
-              .social
-                %a.tip{"data-original-title" => "Facebook", :href => "#"}
-                  %img{:alt => "", :src => asset_path('img/linkedin.png')}/
-                %a.tip{"data-original-title" => "Twitter", :href => "#"}
-                  %img{:alt => "", :src => asset_path('img/twitter.png')}/
-                %a.tip{"data-original-title" => "Google Plus", :href => "#"}
-                  %img{:alt => "", :src => asset_path('img/vimeo.png')}/
-                %a.tip{"data-original-title" => "pInterest", :href => "#"}
-                  %img{:alt => "", :src => asset_path('img/facebook.png')}/
-                %a.tip{"data-original-title" => "LinkedIn", :href => "#"}
-                  %img{:alt => "", :src => asset_path('img/blog.png')}/
+                    %small @blazrobar
+                    \#webdesign
+                %br
+                  %span 2 hours ago
+        .span4
+          .fwidget
+            / Subscribe
+            / Title
+            %h4 Subscribe
+            / Para
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ante at diam pulvinar molestie. Vestibulum ac quam ante, a laoreet risus. Suspendisse pharetra, nibh et sodales tristique, nulla nisl laoreet nulla, eget imperdiet
+            / Form
+            %form.form-inline
+              %input.input-large{:placeholder => "Enter your email", :type => "text"}
+                %button.btn.btn-warning{:type => "submit"} Subscribe
+        .span4
+          .fwidget
+            / About us widget
+            / Title
+            %h4 About Us
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. Sed mauris nibh, congue quis tincidunt vitae, tincidunt non nisi. Vivamus a auctor quam. Donec posuere molestie lacinia.
+            / Social media icons
+            .social
+              %a.tip{"data-original-title" => "Facebook", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/linkedin.png')}/
+              %a.tip{"data-original-title" => "Twitter", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/twitter.png')}/
+              %a.tip{"data-original-title" => "Google Plus", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/vimeo.png')}/
+              %a.tip{"data-original-title" => "pInterest", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/facebook.png')}/
+              %a.tip{"data-original-title" => "LinkedIn", :href => "#"}
+                %img{:alt => "", :src => asset_path('img/blog.png')}/
