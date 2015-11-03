@@ -19,3 +19,5 @@ certs/
 public/capybara.html
 public/assets/
 /vendor/*
+get-pip.py
+config.yml
