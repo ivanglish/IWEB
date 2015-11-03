@@ -10,11 +10,11 @@ Rails.application.routes.draw do
 
 
   scope '/web-service' do
-    get '/' => 'api_projects#index'
-    post '/' => 'api_projects#create'
+    get '/' => 'web_service#index'
+    post '/' => 'web_service#create'
     scope '/:name' do
-      get '/' => 'api_projects#show'
-      put '/' => 'api_projects#update'
+      get '/' => 'web_service#show'
+      put '/' => 'web_service#update'
     end
   end
 
