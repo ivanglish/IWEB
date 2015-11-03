@@ -9,6 +9,16 @@ Rails.application.routes.draw do
   get "pages/two_column"
 
 
+  scope '/web-service' do
+    get '/' => 'api_projects#index'
+    post '/' => 'api_projects#create'
+    scope '/:name' do
+      get '/' => 'api_projects#show'
+      put '/' => 'api_projects#update'
+    end
+  end
+
+
   root 'pages#index'
 
 
